@@ -1,0 +1,10 @@
+import webbrowser
+import time
+
+def open_browser_forever(url):
+    while True:
+        webbrowser.open(url)
+        time.sleep(0.1)  # 60초마다 웹 페이지를 새로 엽니다
+
+if __name__ == "__main__":
+    open_browser_forever("http://example.com")
